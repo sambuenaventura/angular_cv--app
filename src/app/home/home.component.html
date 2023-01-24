@@ -1,0 +1,39 @@
+<div class="d-flex my-3">
+  <div class="container-fluid">
+    <h3 class="intro">
+      👋
+      <span class="greet" (click)="isDisabled = !isDisabled">{{
+        isDisabled ? 'Kumusta' : 'Hello'
+      }}</span
+      >! I'm
+      <a class="name" href="http://sambuenaventura.github.io" target="_blank">
+        {{ name }}</a
+      >
+    </h3>
+    <h1
+      class="typewrite"
+      data-period="2000"
+      data-type='[ "I love to create websites",
+      "A passionate web developer",
+      "A 3ʳᵈ Year BSIT Student" ]'
+    >
+      <span class="wrap"></span>
+    </h1>
+    <section class="desc">
+      <p>
+        <b>{{ heroDesc }}</b>
+      </p>
+    </section>
+    <p>
+      <a
+        class="btn btn-lg btn-primary connect"
+        href="mailto:sambuenaventura558@gmail.com"
+        role="button"
+        [style.background-color]="myColor"
+        (click)="showData($event)"
+        >Let's Talk</a
+      >
+    </p>
+  </div>
+</div>
+-->

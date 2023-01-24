@@ -1,0 +1,42 @@
+<div id="about-page">
+  <!-- Default form subscription -->
+  <form class="text-center border border-light p-5" action="#!">
+    <p class="h4 mb-4">Subscribe</p>
+
+    <p>Join our mailing list. We write rarely, but only the best content.</p>
+
+    <p>
+      <a href="" target="_blank">See the last newsletter</a>
+    </p>
+
+    <!-- Name -->
+    <input
+      type="text"
+      id="defaultSubscriptionFormPassword"
+      class="form-control mb-4"
+      [value]="clientName"
+      required
+    />
+
+    <!-- Email -->
+    <input
+      type="email"
+      id="defaultSubscriptionFormEmail"
+      class="form-control mb-4"
+      [value]="clientEmail"
+      required
+    />
+
+    <!-- Sign in button -->
+    <button
+      class="btn btn-info btn-block"
+      type="submit"
+      [style.color]="myColor"
+      [class]="appliedCSSClass"
+      (click)="showData($event)"
+    >
+      Sign in
+    </button>
+    =
+  </form>
+</div>

@@ -1,0 +1,19 @@
+p {
+  color: white;
+}
+#about-page {
+  margin: 300px; /* adds a margin around the about page */
+  margin-left: 250px;
+  margin-right: 250px;
+  display: flex;
+}
+h1 {
+  text-align: center; /* centers the heading */
+  color: #1abc9c8e;
+  margin-right: 150px;
+}
+p {
+  text-align: justify; /* justifies the paragraphs */
+  margin-bottom: 20px; /* adds margin between paragraphs */
+  font-size: 1.2em;
+}

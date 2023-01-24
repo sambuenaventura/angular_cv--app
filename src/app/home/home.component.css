@@ -1,0 +1,7 @@
+.name:hover {
+  color: #1abc9c !important;
+}
+
+.greet {
+  cursor: pointer;
+}

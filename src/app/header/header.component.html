@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg text-uppercase fixed-top my-3" id="mainNav">
+  <div class="container">
+    <a
+      (click)="currentPage = 'home'"
+      class="navbar-brand"
+      [class]="appliedCSSClass"
+      >SB/></a
+    >
+    <button
+      class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse text-capitalize" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item mx-0 mx-lg-1">
+          <a
+            (click)="currentPage = 'about'"
+            class="nav-link py-3 px-0 px-lg-3 rounded"
+            >About</a
+          >
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a
+            (click)="currentPage = 'education'"
+            class="nav-link py-3 px-0 px-lg-3 rounded"
+            >Education</a
+          >
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a
+            (click)="currentPage = 'skills'"
+            class="nav-link py-3 px-0 px-lg-3 rounded"
+            >Skills</a
+          >
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a
+            (click)="currentPage = 'achievements'"
+            class="nav-link py-3 px-0 px-lg-3 rounded"
+            >Contact</a
+          >
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a
+            (click)="currentPage = 'references'"
+            class="nav-link py-3 px-0 px-lg-3 rounded"
+            >References</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<ng-container *ngIf="currentPage === 'home'">
+  <app-home></app-home>
+</ng-container>
+<ng-container *ngIf="currentPage === 'about'">
+  <app-about></app-about>
+</ng-container>
+<ng-container *ngIf="currentPage === 'education'">
+  <app-education></app-education>
+</ng-container>
+<ng-container *ngIf="currentPage === 'skills'">
+  <app-skills></app-skills>
+</ng-container>
+<ng-container *ngIf="currentPage === 'achievements'">
+  <app-contact></app-contact>
+</ng-container>
+<ng-container *ngIf="currentPage === 'references'">
+  <app-references></app-references>
+</ng-container>
